@@ -11,7 +11,7 @@ export const Questions = () => {
 
   const updateColor = useCallback((color) => setColor(color), []);
   return (
-    <div>
+    <div className="questions-wrapper">
       <form className="question">
         <label className="text">Mighty name</label>
         <input
@@ -26,7 +26,7 @@ export const Questions = () => {
       <form className="question">
         <p className="text">Superpower</p>
         <select name="name" onChange={(e) => setPosition(e.target.value)}>
-          <option value={position} selected disabled hidden>
+          <option defaultValue={position} disabled hidden>
             {position}
           </option>
           {occupation.map((element) => (

@@ -1,5 +1,5 @@
 body {
-  padding-top: 100px;
+  padding: 40px;
   width: 100%;
 }
 
@@ -8,6 +8,7 @@ body {
   max-width: 1024px;
 }
 .title-wrapper {
+  width: 80%;
   display: flex;
   align-items: center;
   margin-bottom: 32px;
@@ -37,7 +38,9 @@ h2,
 }
 
 /* questions */
-
+.questions-wrapper {
+  width: 80%;
+}
 .question {
   display: flex;
   align-items: center;
@@ -52,6 +55,7 @@ h2,
 
 input,
 select {
+  width: 60%;
   border: 1px solid rgb(171, 171, 171);
   border-radius: 3px;
   font-family: "Bungee", cursive;
@@ -61,7 +65,7 @@ select {
 
 select {
   padding: 4px;
-  width: fit-content;
+  width: 80%;
 }
 option {
   font-family: "Bungee", cursive;
@@ -95,4 +99,30 @@ button {
 button:hover {
   cursor: pointer;
   color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-family: "Bungee", cursive;
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-family: "Bungee", cursive;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-family: "Bungee", cursive;
+    font-size: 24px;
+  }
+
+  h2,
+  .h2 {
+    font-family: "Bungee", cursive;
+    font-size: 16px;
+  }
 }
