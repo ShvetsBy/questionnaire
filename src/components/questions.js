@@ -1,4 +1,5 @@
 import data from "../data/occupations.json";
+// used https://casesandberg.github.io/react-color/
 import { CompactPicker } from "react-color";
 import React, { useState, useCallback } from "react";
 
