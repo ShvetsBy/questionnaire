@@ -53,7 +53,7 @@ export const Questions = () => {
 
       {/* If open is true show your <div /> */}
       {open && (
-        <div style={{ color: color.hex }} className="modal fade">
+        <div style={{ color: color.hex }}>
           <h2>Wow</h2>
           <p className="text">{name}, we see you are strong specialist!</p>
           <p className="text">
