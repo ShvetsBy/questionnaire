@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  padding-top: 100px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Bungee", cursive;
+  font-size: 64px;
+}
+
+h2,
+.h2 {
+  font-family: "Bungee", cursive;
+  font-size: 24px;
+}
+
+.logo {
+  font-size: 96px;
+}
+
+.rotate-right {
+  transform: rotate(-3deg);
+}
+
+.rotate-left {
+  transform: rotate(5deg);
+}
+
+/* questions */
+
+.question {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.text {
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input,
+select {
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 3px;
+  font-family: "Bungee", cursive;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+select {
+  padding: 4px;
+  width: fit-content;
+}
+option {
+  font-family: "Bungee", cursive;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+input::placeholder {
+  font-family: "Bungee", cursive;
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+input:hover,
+select:hover {
+  cursor: pointer;
+  border: 1px solid rgb(7, 7, 7);
+}
+
+button {
+  font-family: "Bungee", cursive;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: red;
   color: white;
+  border: none;
+  margin: 48px auto 0px auto;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  cursor: pointer;
+  color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal {
+  width: 60%;
+}
+
+.fade {
 }
